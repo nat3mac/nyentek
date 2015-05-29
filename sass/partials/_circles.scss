@@ -1,0 +1,38 @@
+.circle {
+	width: 5em;
+	height: 5em;
+	background: $gray;
+	-moz-border-radius: 4em;
+	-webkit-border-radius: 4em;
+	border-radius: 4em;
+	box-shadow:
+		inset 0px 2px 0px 0px rgba(255,255,255,0.4),
+		inset 0px -2px 0px 0px rgba(25,34,125,0.2),
+		0px 4px 4px 0px rgba(0,0,0,0.16);
+	color: #EC008B;
+	margin: auto;
+	padding: 1em;
+	&:hover {
+		background: $magenta;
+		color: $white;
+		box-shadow:
+			inset 0px 2px 0px 0px rgba(255,255,255,0.4),
+			inset 0px -2px 0px 0px rgba(25,34,125,0.2),
+			0px 8px 8px 0px rgba(0,0,0,0.16);
+		cursor: pointer;
+		.icon {
+			fill:$white;
+		}
+	}
+	.active & {
+		background: $cyan;
+		color: $white;
+		box-shadow:
+			inset 0px 2px 0px 0px rgba(255,255,255,0.4),
+			inset 0px -2px 0px 0px rgba(25,34,125,0.2),
+			0px 8px 8px 0px rgba(0,0,0,0.16);
+		.icon {
+			fill:$white;
+		}
+	}
+}
