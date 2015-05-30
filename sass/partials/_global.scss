@@ -1,0 +1,39 @@
+* {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+}
+html {
+	font-family: $serif;
+	font-size: 16pt;
+	font-weight: 300;
+	background: $white;
+
+}
+body {
+	color: $indigo;
+	width: 100%;
+}
+a {
+	&:link{
+		text-decoration: none;
+		color: $cyan;
+	}
+	&:visited{
+		text-decoration: none;
+		color: $cyan;
+	}
+	&:hover{
+		text-decoration: none;
+		color: $magenta;
+		cursor: pointer;
+	}
+	&:active{
+		text-decoration: none;
+		color: $magenta;
+	}
+}
+section h1 {
+	margin-bottom: 1em;
+}

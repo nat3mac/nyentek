@@ -12,7 +12,7 @@
 	color: #EC008B;
 	margin: auto;
 	padding: 1em;
-	&:hover {
+	/*&:hover {
 		background: $magenta;
 		color: $white;
 		box-shadow:
@@ -33,6 +33,24 @@
 			0px 8px 8px 0px rgba(0,0,0,0.16);
 		.icon {
 			fill:$white;
+		}
+	}*/
+	.contact & {
+		background: $cyan;
+		width: 2em;
+		height: 2em;
+		padding: 0.5em;
+		&:hover {
+			background: $magenta;
+			color: $white;
+			box-shadow:
+				inset 0px 2px 0px 0px rgba(255,255,255,0.4),
+				inset 0px -2px 0px 0px rgba(25,34,125,0.2),
+				0px 8px 8px 0px rgba(0,0,0,0.16);
+			cursor: pointer;
+			.icon {
+				fill:$white;
+			}
 		}
 	}
 }

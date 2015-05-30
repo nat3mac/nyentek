@@ -1,72 +1,102 @@
 @import "partials/colors";
 @import "partials/type";
+@import "partials/global";
 @import "partials/flex";
 @import "partials/circles";
+@import "partials/clients";
 
-* {
-	margin:0;
-	padding:0;
-	border:0;
-	outline:0;
-	}
-
-html {
-	font-family: $serif;
-	font-size: 16pt;
-	//font-weight: 300;
-	background: $white;
-}
-body {
-	color: $indigo;
-	width: 100%;
-}
-section h1 {
-	margin-bottom: 1em;
-}
 header {
-	@include flex(wrap, center, center);
-	background-image: url(../hero.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	.logo {
-		width: 80%;
-		max-width: 720px;
-		height: auto;
-		margin: auto;
-		padding-bottom:0.5em;
-	}
-	h1 {
-		font-family: $serif;
-		font-weight: 300;
+	height: 1.75em;
+	margin-bottom: -2em;
+	nav {
+		@include flex(nowrap, center, flex-end);
+		margin-right: 1.5em;
+		padding-top: 0.25em;
+		font-family: $sans;
+		font-weight: 500;
 		font-size: 1.5em;
-		text-align: center;
-		width: 80%;
-		margin: auto;
-		text-shadow: rgba(255,255,255,0.75) 0px 1px 24px
+		li {
+			list-style-type: none;
+			display: inline-block;
+			margin: 0em 0.5em;
+			a:link, a:visited {
+				color: $indigo;
+			}
+			a:hover, a:active {
+				color: $cyan;
+			}
+		}
+		@media screen and (max-width: 994px) {
+			font-size: 1em;
+		}
 	}
-	padding: 2em 0em 6em;
+	&.subpage {
+		@include flex(wrap, center, $between);
+		background: $gray;
+		margin: 0;
+		height: auto;
+		box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.16);
+		position: fixed;
+		width: 100%;
+		top:0; left:0; right: 0;
+		img {
+			max-height: 4em;
+		}
+		nav {
+			font-size: 1em;
+			margin-top: -0.25em;
+			padding-bottom: 0.25em;
+		}
+	}
 }
-
-a {
-	&:link{
-		text-decoration: none;
-		color: $cyan;
+.splash {
+		background-image: url(../img/hero.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		@include flex(wrap, center, center);
+		.logo {
+			width: 80%;
+			max-width: 720px;
+			height: auto;
+			margin: auto;
+			padding-bottom:0.5em;
+		}
+		h1 {
+			font-family: $serif;
+			font-weight: 300;
+			font-size: 1.5em;
+			text-align: center;
+			width: 80%;
+			margin: auto;
+			text-shadow: rgba(255,255,255,0.75) 0px 1px 24px
+		}
+		a {
+			padding: 0.5em 1em 0.625em;
+			margin: 0.75em;
+			font-family: $sans;
+			font-weight: 500;
+			font-size: 1.25em;
+			color: $gray;
+			background: $cyan;
+			border-radius: 0.125em;
+			float: right;
+			box-shadow:
+				inset 0px 2px 0px 0px rgba(255,255,255,0.4),
+				inset 0px -2px 0px 0px rgba(25,34,125,0.2),
+				0px 4px 4px 0px rgba(0,0,0,0.16);
+			&:hover {
+				background: $magenta;
+				color: white;
+				box-shadow:
+					inset 0px 2px 0px 0px rgba(255,255,255,0.4),
+					inset 0px -2px 0px 0px rgba(25,34,125,0.2),
+					0px 8px 8px 0px rgba(0,0,0,0.16);
+				cursor: pointer;
+			}
+		}
+		padding: 4em 2em 4em;
 	}
-	&:visited{
-		text-decoration: none;
-		color: $cyan;
-	}
-	&:hover{
-		text-decoration: none;
-		color: $magenta;
-		cursor: pointer;
-	}
-	&:active{
-		text-decoration: none;
-		color: $magenta;
-	}
-}
 .work {
 	@include flex(wrap, flex-start, center);
 	.details.inactive {
@@ -106,11 +136,11 @@ a {
 			bottom: -1em;
 			left: calc(50% - 2em);
 		}
-		&.active {
+		/*&.active {
 			.arrow {
 				visibility: visible;
 			}
-		}
+		}*/
 
 
 		@media screen and (max-width:994px){
@@ -143,7 +173,7 @@ a {
 			color: $indigo;
 			padding: 0.5em;
 			border-radius: 0.125em;
-			box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.02);
+			box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.02);
 			h3 {
 				margin-bottom: 0.5em;
 				font-weight: 500;
@@ -152,9 +182,15 @@ a {
 				width: 100%;
 			}
 			&:hover {
-				box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.08);
+				box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.08);
 			}
 		}
+		@media screen and (max-width:994px) {
+				@include flex(wrap, center, center);
+				.example {
+					width: 100%;
+				}
+			}
 	}
 	.seeAll {
 		text-align: center;
@@ -183,10 +219,31 @@ a {
 	
 }
 .testimonials {
-	background: $gray;
+	background: $white;
 	padding: 2em;
 	.testimony {
 		margin-bottom: 2em;
+		blockquote {
+			&:before {
+				content: '\201C';
+				font-weight: 700;
+				font-size: 1.25em;
+				display: inline-block;
+				width: 0.625em;
+				margin-top: -0.5em;
+				margin-left: -0.625em;
+				color: $cyan;
+			}
+			&:after {
+				content: '\201D';
+				font-weight: 700;
+				font-size: 1.25em;
+				color: $cyan;
+				display: inline-block;
+				margin-top: -0.5em;
+				margin-left: 0.125em;
+			}
+		}
 		h4 {
 			font-weight: 500;
 			color: $cyan;
@@ -202,21 +259,84 @@ a {
 	background: $indigo;
 	color: $white;
 	padding: 2em;
+	.title {
+		@include flex (wrap, center, $between);
+		.social {
+			margin-top: -1em;
+			@include flex(nowrap, center, flex-end);
+			.circle {
+				margin-left: 1em;
+			}
+		}
+	}
 	form {
+		* {display:block;}
+		@include flex (wrap, baseline, center);
 		input {
-			width: 100%;
+			width: 24em;
 			height: 2em;
-			padding: 0.5em;
-			margin: 1em 0em;
-			border-radius: 1px;
+			padding: 0.5em 1em;
+			margin: 1em;
+			border-radius: 0.0125em;
+			font-size: 1em;
+			font-family: $sans;
+			font-weight: 300;
+		}
+		textarea {
+			@extend input;
+			height: 10em;
+			resize: vertical;
+		}
+		button {
+			padding: 0.5em 1em 0.625em;
+			margin: 0.75em;
+			font-family: $sans;
+			font-weight: 500;
+			font-size: 1.25em;
+			color: $gray;
+			background: $cyan;
+			border-radius: 0.125em;
+			float: right;
+			box-shadow:
+				inset 0px 2px 0px 0px rgba(255,255,255,0.4),
+				inset 0px -2px 0px 0px rgba(25,34,125,0.2),
+				0px 4px 4px 0px rgba(0,0,0,0.16);
+			&:hover {
+				background: $magenta;
+				color: white;
+				box-shadow:
+					inset 0px 2px 0px 0px rgba(255,255,255,0.4),
+					inset 0px -2px 0px 0px rgba(25,34,125,0.2),
+					0px 8px 8px 0px rgba(0,0,0,0.16);
+				cursor: pointer;
+			}
+			&:after {
+				content: url(../img/arrow.png);
+				position:relative;
+				top:  2px;
+				left: 4px;
+			}
+		}
+		@media screen and (max-width:994px) {
+			width: calc(100% - 1em);
+			order: 2;
+			margin: 1em 0em 0em;
+		}
+	}
+	p {
+	width: calc(50% - 1.5em);
+	@media screen and (max-width:994px) {
+		width: 100%;
+		order: 1;
+		margin: 1.5em 0em 0em;
 		}
 	}
 }
 footer {
-	@include flex(nowrap, center, $around);
+	@include flex(wrap, baseline, center);
 	background: $indigo;
 	color: $white;
-	padding-bottom: 2em;
+	padding: 2em 2em 3em;
 	h6{
 		text-align: center;
 		font-family: $sans;
@@ -225,11 +345,14 @@ footer {
 		.cName {
 			font-weight: 500;
 			&:before {
-				content: url(../icon.png);
+				content: url(../img/icon.png);
 				position:relative;
 				top:9px;
 				right: 9px;
 			}
 		}
+	}
+	a {
+		font-family: $sans;
 	}
 }

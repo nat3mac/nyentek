@@ -1,0 +1,10 @@
+.clients {
+	padding: 2em;
+	.client {
+		padding-top: 4em;
+		.images{
+			@include flex(wrap, flex-start, flex-start);
+			padding-bottom: 2em;
+		}
+	}
+}
