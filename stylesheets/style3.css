@@ -8549,125 +8549,165 @@ h1 {
   font-weight: 300;
 }
 
-/* line 10, ../sass/style3.scss */
+/* line 5, ../sass/style3.scss */
 * {
   font-family: 'Effra', sans-serif;
 }
 
-/* line 13, ../sass/style3.scss */
+/* line 8, ../sass/style3.scss */
 body {
   color: #19227D;
   font-size: 16pt;
 }
 
-/* line 17, ../sass/style3.scss */
+/* line 12, ../sass/style3.scss */
 p, blockquote {
   font-family: 'Museo Slab';
 }
 
-/* line 20, ../sass/style3.scss */
+/* line 15, ../sass/style3.scss */
 section {
   padding: 1em 0em 2em;
 }
-/* line 22, ../sass/style3.scss */
+/* line 17, ../sass/style3.scss */
 section h1 {
   margin-bottom: 1em;
 }
 
-/* line 26, ../sass/style3.scss */
+/* line 21, ../sass/style3.scss */
 .splash {
   background-image: url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-/* line 31, ../sass/style3.scss */
+/* line 26, ../sass/style3.scss */
 .splash small {
   font-family: "Museo Slab", serif;
   font-weight: 300;
 }
-/* line 35, ../sass/style3.scss */
+/* line 30, ../sass/style3.scss */
 .splash .schedule {
   margin-top: 2em;
 }
 
-/* line 39, ../sass/style3.scss */
+/* line 34, ../sass/style3.scss */
 .categories {
   background: #19227D;
   color: #FEFEFE;
+  text-align: center;
+}
+/* line 38, ../sass/style3.scss */
+.categories p {
+  margin-top: 16px;
+}
+@media screen and (max-width: 768px) {
+  /* line 34, ../sass/style3.scss */
+  .categories {
+    text-align: left;
+  }
+  /* line 43, ../sass/style3.scss */
+  .categories h2 {
+    margin-bottom: 16px;
+  }
+  /* line 46, ../sass/style3.scss */
+  .categories p {
+    margin-top: 4px;
+  }
+}
+/* line 51, ../sass/style3.scss */
+.categories .col-sm-4 {
+  margin-bottom: 16px;
 }
 
-/* line 43, ../sass/style3.scss */
+/* line 55, ../sass/style3.scss */
 .featured {
   background: #EBEEF0;
 }
-/* line 45, ../sass/style3.scss */
+/* line 57, ../sass/style3.scss */
 .featured .example {
   background: #FEFEFE;
   color: #19227D;
   border-radius: 2px;
 }
-/* line 49, ../sass/style3.scss */
+/* line 61, ../sass/style3.scss */
 .featured .example h3 {
   padding-top: 8px;
 }
-/* line 52, ../sass/style3.scss */
+/* line 64, ../sass/style3.scss */
 .featured .example p {
   padding: 8px 4px 12px;
 }
-/* line 56, ../sass/style3.scss */
+/* line 68, ../sass/style3.scss */
 .featured .seeAll {
   margin-top: 2em;
 }
 
-/* line 61, ../sass/style3.scss */
+/* line 73, ../sass/style3.scss */
 .testimonials .testimony {
   margin: 2em 0em;
 }
+/* line 75, ../sass/style3.scss */
+.testimonials .testimony h4 {
+  color: #00ADEF;
+}
 
-/* line 65, ../sass/style3.scss */
+/* line 80, ../sass/style3.scss */
 .contact {
   background: #19227D;
   color: #FEFEFE;
 }
-/* line 68, ../sass/style3.scss */
+/* line 83, ../sass/style3.scss */
 .contact input {
   margin-bottom: 1em;
 }
-/* line 71, ../sass/style3.scss */
+/* line 86, ../sass/style3.scss */
 .contact textarea {
   height: 5em;
   margin-bottom: 1em;
 }
-/* line 76, ../sass/style3.scss */
+/* line 91, ../sass/style3.scss */
 .contact .send:after {
   content: url(../img/arrow.png);
   position: relative;
+  height: 1em;
+  width: 1em;
   top: 2px;
   left: 4px;
 }
 
-/* line 84, ../sass/style3.scss */
+/* line 101, ../sass/style3.scss */
 footer {
   background: #19227D;
   color: #FEFEFE;
   padding-bottom: 1.5em;
 }
-/* line 88, ../sass/style3.scss */
+/* line 105, ../sass/style3.scss */
 footer h6 {
   font-weight: 300;
   font-size: 1em;
   margin-left: 9px;
   line-height: 2;
 }
-/* line 93, ../sass/style3.scss */
+/* line 110, ../sass/style3.scss */
 footer h6 .cName {
   font-weight: 500;
 }
-/* line 95, ../sass/style3.scss */
+/* line 112, ../sass/style3.scss */
 footer h6 .cName:before {
   content: url(../img/icon.png);
   position: relative;
   top: 9px;
   right: 9px;
+}
+@media screen and (max-width: 768px) {
+  /* line 105, ../sass/style3.scss */
+  footer h6 {
+    text-align: center;
+    margin: auto;
+  }
+}
+/* line 124, ../sass/style3.scss */
+footer .social {
+  margin-top: 16px;
 }

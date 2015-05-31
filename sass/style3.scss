@@ -2,11 +2,6 @@
 @import "bootstrap";
 @import "partials/type";
 
-//@import "partials/type";
-//@import "partials/flex";
-//@import "partials/circles";
-//@import "partials/clients";
-
 * {
 	font-family: 'Effra', sans-serif;
 }
@@ -39,6 +34,23 @@ section {
 .categories {
 	background: $indigo;
 	color: $white;
+	text-align: center;
+	p {
+		margin-top: 16px;
+	}
+	@media screen and (max-width:$screen-sm) {
+		text-align: left;
+		h2 {
+			margin-bottom: 16px;
+		}
+		p {
+			margin-top: 4px;
+		}
+
+	}
+	.col-sm-4 {
+		margin-bottom: 16px;
+	}
 }
 .featured {
 	background: $gray;
@@ -60,6 +72,9 @@ section {
 .testimonials {
 	.testimony {
 		margin: 2em 0em;
+		h4 {
+			color: $cyan;
+		}
 	}
 }
 .contact {
@@ -76,6 +91,8 @@ section {
 		&:after {
 			content: url(../img/arrow.png);
 			position:relative;
+			height: 1em;
+			width: 1em;
 			top:  2px;
 			left: 4px;
 		}
@@ -99,5 +116,12 @@ footer {
 				right: 9px;
 			}
 		}
+		@media screen and (max-width:$screen-sm) {
+			text-align: center;
+			margin: auto;
+		}
+	}
+	.social {
+		margin-top: 16px;
 	}
 }
