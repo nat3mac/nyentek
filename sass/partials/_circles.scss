@@ -12,7 +12,7 @@
 	color: #EC008B;
 	margin: auto;
 	padding: 1em;
-	/*&:hover {
+	&:hover {
 		background: $magenta;
 		color: $white;
 		box-shadow:
@@ -24,7 +24,7 @@
 			fill:$white;
 		}
 	}
-	.active & {
+	z.active & {
 		background: $cyan;
 		color: $white;
 		box-shadow:
@@ -34,7 +34,7 @@
 		.icon {
 			fill:$white;
 		}
-	}*/
+	}
 	.contact & {
 		background: $cyan;
 		width: 2em;

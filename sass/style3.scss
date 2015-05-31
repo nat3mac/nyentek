@@ -1,0 +1,95 @@
+@import "partials/colors";
+@import "bootstrap";
+@import "partials/type";
+
+//@import "partials/type";
+//@import "partials/flex";
+//@import "partials/circles";
+//@import "partials/clients";
+
+* {
+	font-family: 'Effra', sans-serif;
+}
+body {
+	color: $indigo;
+	font-size: 16pt;
+}
+p, blockquote {
+	font-family: 'Museo Slab';
+}
+section {
+	padding: 1em 0em 2em;
+	h1 {
+		margin-bottom: 1em;
+	}
+}
+.splash {
+	background-image: url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	small {
+		font-family: $serif;
+		font-weight: 300;
+	}
+	.schedule {
+		margin-top: 2em;
+	}
+}
+.categories {
+	background: $indigo;
+	color: $white;
+}
+.featured {
+	background: $gray;
+	.example {
+		background: $white;
+		color: $indigo;
+		border-radius: 2px;
+		h3 {
+			padding-top: 8px;
+		}
+		p {
+			padding: 8px 4px 12px;
+		}
+	}
+	.seeAll {
+		margin-top: 2em;
+	}
+}
+.testimonials {
+	.testimony {
+		margin: 2em 0em;
+	}
+}
+.contact {
+	background: $indigo;
+	color: $white;
+	input {
+		margin-bottom: 1em;
+	}
+	textarea {
+		height: 5em;
+		margin-bottom: 1em;
+	}
+}
+footer {
+	background: $indigo;
+	color: $white;
+	padding-bottom: 1.5em;
+	h6{
+		font-weight: 300;
+		font-size: 1em;
+		margin-left: 9px;
+		line-height: 2;
+		.cName {
+			font-weight: 500;
+			&:before {
+				content: url(../img/icon.png);
+				position:relative;
+				top:9px;
+				right: 9px;
+			}
+		}
+	}
+}
