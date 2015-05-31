@@ -2,9 +2,20 @@
 	padding: 2em;
 	.client {
 		padding-top: 4em;
+		min-height: 350px;
 		.images{
 			@include flex(wrap, flex-start, flex-start);
 			padding-bottom: 2em;
+		}
+		.logo {
+			height: 30px;
+			width: 30px;
+			background: blue;
+			float: left;
+			margin: 25px 10px 0px 0px;
+		}
+		h1 {
+			margin-bottom: .4em;
 		}
 	}
 }

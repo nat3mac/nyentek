@@ -1,10 +1,10 @@
-@import "bootstrap";
 @import "partials/colors";
 @import "partials/type";
 @import "partials/global";
 @import "partials/flex";
 @import "partials/circles";
 @import "partials/clients";
+@import "bootstrap";
 
 header {
 	height: 1.75em;
@@ -40,6 +40,7 @@ header {
 		position: fixed;
 		width: 100%;
 		top:0; left:0; right: 0;
+		z-index: 100;
 		img {
 			max-height: 4em;
 		}
