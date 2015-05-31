@@ -72,6 +72,14 @@ section {
 		height: 5em;
 		margin-bottom: 1em;
 	}
+	.send {
+		&:after {
+			content: url(../img/arrow.png);
+			position:relative;
+			top:  2px;
+			left: 4px;
+		}
+	}
 }
 footer {
 	background: $indigo;

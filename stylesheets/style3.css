@@ -8639,25 +8639,32 @@ section h1 {
   height: 5em;
   margin-bottom: 1em;
 }
-
 /* line 76, ../sass/style3.scss */
+.contact .send:after {
+  content: url(../img/arrow.png);
+  position: relative;
+  top: 2px;
+  left: 4px;
+}
+
+/* line 84, ../sass/style3.scss */
 footer {
   background: #19227D;
   color: #FEFEFE;
   padding-bottom: 1.5em;
 }
-/* line 80, ../sass/style3.scss */
+/* line 88, ../sass/style3.scss */
 footer h6 {
   font-weight: 300;
   font-size: 1em;
   margin-left: 9px;
   line-height: 2;
 }
-/* line 85, ../sass/style3.scss */
+/* line 93, ../sass/style3.scss */
 footer h6 .cName {
   font-weight: 500;
 }
-/* line 87, ../sass/style3.scss */
+/* line 95, ../sass/style3.scss */
 footer h6 .cName:before {
   content: url(../img/icon.png);
   position: relative;
