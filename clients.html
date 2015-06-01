@@ -33,19 +33,21 @@
 	>
 	<script src="//use.typekit.net/adl3nfq.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-	<link rel="stylesheet" type="text/css" href="stylesheets/style2.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style3.css">
 </head>
 <body>
-	<header class="subpage">
-		<img src="img/nyentek.png">
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a>
-				<li><a href="blog.html">Blog</a>
-				<li><a href="index.html#contact">Contact</a>
-			</ul>
-		</nav>
-	</header>
+	<div class="jumbotron splash">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<img class="img-responsive" src="img/nyentek.png" alt="Nyentek Logo"/>
+				</div>
+				<div class="col-sm-6 text-center schedule">
+					<a class="btn btn-primary btn-lg" href="#contact" role="button">Schedule a Free Consultation</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<section class="clients">
 		<div class="client" id="ams">
 			<h1>Association Maintenance Services</h1>
@@ -131,12 +133,75 @@
 			<p>zInspector is a California real estate Startup that helps agents with property management. They had a mobile app that only sent photo’s through email so they asked us to develop a backend as well as a Web App.  We created a JSON API,  and developed the Web App in Python + Django + MySQL. The Web app uses lots of jQuery and Ajax and the system is currently published on Amazon Elastic Beanstalk. We also added a bunch of features to the iOS and Android mobile apps that were created using Corona SDK.</p>
 		</div>
 	</section>
+	<section class="contact" id="contact">
+		<div class="container">
+			<h1>Get in Touch</h1>
+			<div class="row">
+				<form class="form-group" method="post" action="/mailer.php">
+					<fieldset class="col-sm-6">
+						<input
+							type="text"
+							class="form-control"
+							id="username"
+							placeholder="Your Name"
+							name="name"
+							required
+						>
+						<input
+							type="email"
+							class="form-control"
+							id="useremail"
+							placeholder="Email Address"
+							name="email"
+							required
+						>
+						<input
+							type="text"
+							class="form-control"
+							id="subject"
+							placeholder="Subject"
+							name="subject"
+							required
+						>
+					</fieldset>
+					<fieldset class="col-sm-6">
+						<textarea class="form-control" placeholder="About Your Project" name="body" required></textarea>
+						<button type="submit" class="btn btn-primary btn-lg send">
+							Send
+						</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</section>
 	<footer>
 		<div class="container">
-			<h6>
-				<span class="cName">Nyentek LLC</span>, Copyright 2015. All Rights Reserved.
-			</h6>
-			<a href="mailto:support@nyentek.com">&nbsp;Client Support</a>
+			<div class="row">
+				<div class="col-sm-9">
+					<h6>
+						<span class="cName">Nyentek LLC</span>, Copyright 2015. All Rights Reserved.
+					</h6>
+				</div>
+				<div class="col-sm-3 col-xs-6 col-xs-offset-3 col-sm-offset-0">
+					<div class="row social">
+						<div class="col-xs-4">
+							<a href="https://www.facebook.com/nyentekllc">
+								<img src="img/fb.png" class="img-responsive center-block;">
+							</a>
+						</div>
+						<div class="col-xs-4">
+							<a href="https://twitter.com/NyentekLLC">
+								<img src="img/twitter.png" class="img-responsive center-block;">
+							</a>
+						</div>
+						<div class="col-xs-4">
+							<a href="mailto:support@nyentek.com">
+								<img src="img/mail.png" class="img-responsive center-block;">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>
