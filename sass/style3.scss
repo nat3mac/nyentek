@@ -15,7 +15,7 @@ p, blockquote {
 section {
 	padding: 1em 0em 2em;
 	h1 {
-		margin-bottom: 1em;
+		margin-bottom: 16px;
 	}
 }
 .splash {
@@ -26,6 +26,7 @@ section {
 	small {
 		font-family: $serif;
 		font-weight: 300;
+		color: $indigo;
 	}
 	.schedule {
 		margin-top: 2em;
@@ -35,6 +36,9 @@ section {
 	background: $indigo;
 	color: $white;
 	text-align: center;
+	h2 {
+		margin-bottom: 16px;
+	}
 	p {
 		margin-top: 16px;
 	}
@@ -49,15 +53,19 @@ section {
 
 	}
 	.col-sm-4 {
-		margin-bottom: 16px;
+		margin-bottom: 32px;
 	}
 }
 .featured {
-	background: $gray;
+	background-image: url(../img/hero2.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 	.example {
 		background: $white;
 		color: $indigo;
 		border-radius: 2px;
+		box-shadow: 0px 4px 4px 0px rgba(25,34,125,0.1);
 		h3 {
 			padding-top: 8px;
 		}
@@ -80,21 +88,24 @@ section {
 .contact {
 	background: $indigo;
 	color: $white;
-	input {
-		margin-bottom: 1em;
-	}
-	textarea {
-		height: 5em;
-		margin-bottom: 1em;
-	}
-	.send {
-		&:after {
-			content: url(../img/arrow.png);
-			position:relative;
-			height: 1em;
-			width: 1em;
-			top:  2px;
-			left: 4px;
+	form {
+		margin-top: 32px;
+		input {
+			margin-bottom: 1em;
+		}
+		textarea {
+			height: 5em;
+			margin-bottom: 1em;
+		}
+		.send {
+			&:after {
+				content: url(../img/arrow.png);
+				position:relative;
+				height: 1em;
+				width: 1em;
+				top:  2px;
+				left: 4px;
+			}
 		}
 	}
 }

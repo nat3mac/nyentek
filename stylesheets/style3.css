@@ -8571,7 +8571,7 @@ section {
 }
 /* line 17, ../sass/style3.scss */
 section h1 {
-  margin-bottom: 1em;
+  margin-bottom: 16px;
 }
 
 /* line 21, ../sass/style3.scss */
@@ -8585,89 +8585,102 @@ section h1 {
 .splash small {
   font-family: "Museo Slab", serif;
   font-weight: 300;
+  color: #19227D;
 }
-/* line 30, ../sass/style3.scss */
+/* line 31, ../sass/style3.scss */
 .splash .schedule {
   margin-top: 2em;
 }
 
-/* line 34, ../sass/style3.scss */
+/* line 35, ../sass/style3.scss */
 .categories {
   background: #19227D;
   color: #FEFEFE;
   text-align: center;
 }
-/* line 38, ../sass/style3.scss */
+/* line 39, ../sass/style3.scss */
+.categories h2 {
+  margin-bottom: 16px;
+}
+/* line 42, ../sass/style3.scss */
 .categories p {
   margin-top: 16px;
 }
 @media screen and (max-width: 768px) {
-  /* line 34, ../sass/style3.scss */
+  /* line 35, ../sass/style3.scss */
   .categories {
     text-align: left;
   }
-  /* line 43, ../sass/style3.scss */
+  /* line 47, ../sass/style3.scss */
   .categories h2 {
     margin-bottom: 16px;
   }
-  /* line 46, ../sass/style3.scss */
+  /* line 50, ../sass/style3.scss */
   .categories p {
     margin-top: 4px;
   }
 }
-/* line 51, ../sass/style3.scss */
+/* line 55, ../sass/style3.scss */
 .categories .col-sm-4 {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
-/* line 55, ../sass/style3.scss */
+/* line 59, ../sass/style3.scss */
 .featured {
-  background: #EBEEF0;
+  background-image: url(../img/hero2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
-/* line 57, ../sass/style3.scss */
+/* line 64, ../sass/style3.scss */
 .featured .example {
   background: #FEFEFE;
   color: #19227D;
   border-radius: 2px;
+  box-shadow: 0px 4px 4px 0px rgba(25, 34, 125, 0.1);
 }
-/* line 61, ../sass/style3.scss */
+/* line 69, ../sass/style3.scss */
 .featured .example h3 {
   padding-top: 8px;
 }
-/* line 64, ../sass/style3.scss */
+/* line 72, ../sass/style3.scss */
 .featured .example p {
   padding: 8px 4px 12px;
 }
-/* line 68, ../sass/style3.scss */
+/* line 76, ../sass/style3.scss */
 .featured .seeAll {
   margin-top: 2em;
 }
 
-/* line 73, ../sass/style3.scss */
+/* line 81, ../sass/style3.scss */
 .testimonials .testimony {
   margin: 2em 0em;
 }
-/* line 75, ../sass/style3.scss */
+/* line 83, ../sass/style3.scss */
 .testimonials .testimony h4 {
   color: #00ADEF;
 }
 
-/* line 80, ../sass/style3.scss */
+/* line 88, ../sass/style3.scss */
 .contact {
   background: #19227D;
   color: #FEFEFE;
 }
-/* line 83, ../sass/style3.scss */
-.contact input {
+/* line 91, ../sass/style3.scss */
+.contact form {
+  margin-top: 32px;
+}
+/* line 93, ../sass/style3.scss */
+.contact form input {
   margin-bottom: 1em;
 }
-/* line 86, ../sass/style3.scss */
-.contact textarea {
+/* line 96, ../sass/style3.scss */
+.contact form textarea {
   height: 5em;
   margin-bottom: 1em;
 }
-/* line 91, ../sass/style3.scss */
-.contact .send:after {
+/* line 101, ../sass/style3.scss */
+.contact form .send:after {
   content: url(../img/arrow.png);
   position: relative;
   height: 1em;
@@ -8676,24 +8689,24 @@ section h1 {
   left: 4px;
 }
 
-/* line 101, ../sass/style3.scss */
+/* line 112, ../sass/style3.scss */
 footer {
   background: #19227D;
   color: #FEFEFE;
   padding-bottom: 1.5em;
 }
-/* line 105, ../sass/style3.scss */
+/* line 116, ../sass/style3.scss */
 footer h6 {
   font-weight: 300;
   font-size: 1em;
   margin-left: 9px;
   line-height: 2;
 }
-/* line 110, ../sass/style3.scss */
+/* line 121, ../sass/style3.scss */
 footer h6 .cName {
   font-weight: 500;
 }
-/* line 112, ../sass/style3.scss */
+/* line 123, ../sass/style3.scss */
 footer h6 .cName:before {
   content: url(../img/icon.png);
   position: relative;
@@ -8701,13 +8714,13 @@ footer h6 .cName:before {
   right: 9px;
 }
 @media screen and (max-width: 768px) {
-  /* line 105, ../sass/style3.scss */
+  /* line 116, ../sass/style3.scss */
   footer h6 {
     text-align: center;
     margin: auto;
   }
 }
-/* line 124, ../sass/style3.scss */
+/* line 135, ../sass/style3.scss */
 footer .social {
   margin-top: 16px;
 }
